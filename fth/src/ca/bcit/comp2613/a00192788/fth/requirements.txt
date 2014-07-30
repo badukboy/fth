@@ -1,0 +1,29 @@
+FTH - For The Horde
+
+1) download this package to your own repo
+2) rename this package to ca.bcit.comp2613.<your student id>.fth
+	* note package names are always lowercase
+3) if things don't compile properly, make sure to fix your pom.xml
+4) Run HordeUtilTestDriver ... you'll get an InvalidDirectoryException
+	* fix this by fixing HordeUtil.getFile
+5) Modify HordeUtil.createJacksonXmlMapper to create an ObjectMapper that will map to XML instead of JSON
+6) Run HordeUtilTestDriver again and a file called characters.xml will be generated.
+	* I'll leave it to you to figure out where this file will be generated, however the output of this will
+	be needed later on
+	
+	
+7) Start up ForTheHordeSwingApplication.  Take a look "Insert XML" button callback
+	* modify the Insert XML button callback so that whatever is pasted in the textarea will be saved to the DB
+	* copy the contents from above to the textarea and click the Insert XML Button
+8) Click the Mysterious Query Button
+	* mysterious query should query the DB with a mysterious query ;)
+	* this query reads from a .properties file, but the code isn't quite right to read from the .properties file = fix it
+	* this mysterious query will return an arrayList of characters with a where clause
+	* the button action however should ALSO grab the results back and put it in the text area box sorted by Level
+9) Save the results of the textArea box (after the query) to a file (charactersReport.xml) via the Save Text Area To File button
+	* you will have to add some code for this to save properly
+10) push your changes on your repo to GitHub
+
+11) OPTIONAL: if you finish your exam early and want me to mark it, raise your hand and I'll come by
+
+Good luck!
